@@ -1,0 +1,197 @@
+body {
+margin: 0;
+padding: 0;
+background-color: #222222;
+}
+
+.home-nav-wrap {
+  align-items: baseline;
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 0.3333rem;
+  padding: 0;
+  overflow: visible;
+  background-color: transparent;
+  font-family: Filosofia, Georgia, serif;
+  font-size: 16.5px;
+}
+
+ul.second-ul {
+  position: absolute;
+  z-index: 2;
+  bottom: 2.125rem;
+  left: 2.125rem;
+  right: 2.125rem;
+  font-size: 1.375em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0;
+  overflow: visible;
+  background-color: transparent;
+  font-family: Filosofia, Georgia, serif;
+  font-size: 16.5px;
+}
+
+ul.third-ul {
+      position: absolute;
+      z-index: 2;
+      bottom: 2.125rem;
+      left: 2.125rem;
+      right: 2.125rem;
+      font-size: 1.375em;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 0;
+      overflow: visible;
+      background-color: transparent;
+      font-family: Filosofia, Georgia, serif;
+      font-size: 16.5px;
+}
+
+li {
+  float: left;
+}
+
+.home__list-item::after{
+    color: white;
+    content: "|";
+    display: inline-block;
+    margin-top: 0.6666rem;
+    margin-bottom: 0.3333rem;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  animation: animate 14s ease-in-out infinite;
+  background-size: cover;
+}
+
+
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resize{
+  length: 200px;
+  width: 800px;
+}
+
+@keyframes animate {
+  0%,100%{
+    background-image: url("../images/main_bg.jpg");
+  }
+  25%{
+    background-image: url("../images/outside_luca.jpg");
+  }
+  50%{
+    background-image: url("../images/inside_luca_daytime.jpg");
+  }
+  75%{
+    background-image: url("../images/drinks_night_luca.jpg");
+  }
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-image: url("../images/texture_background.jpg")
+}
+
+.right {
+  right: 0;
+  background-image: url("../images/inside_luca_night.jpg");
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  margin-top: -150px
+}
+
+.section-wrapper {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 50rem;
+}
+
+iframe {
+  position: absolute;
+  bottom: -700px;
+}
+
+iframe.second-iframe {
+  position: absolute;
+  bottom: -1400px;
+}
+
+p {
+  font-family: Filosofia, Georgia, serif;
+  font-size: 19.25px;
+}
+
+.contact{
+  color: white;
+  font-family: Filosofia,Georgia,serif;
+}
+
+#home {
+  margin-top: 0%;
+  padding-bottom: 0%;
+}
+
+#restaurant {
+  margin-bottom: 100%;
+}
+
+#contactus {
+  margin-top: 100%;
+  padding-bottom: 25%;
+}
